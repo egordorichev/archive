@@ -1,0 +1,7 @@
+cmake-build-debug/
+dist/
+install_*
+MakeFile
+CMakeCa*
+.idea
+test
