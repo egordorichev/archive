@@ -113,8 +113,6 @@ LIT_METHOD(archive_extract) {
 }
 
 void archive_file(struct archive* a, struct archive_entry* entry, const char* name) {
-	printf("%s\n", name);
-
 	struct stat st;
 	char buff[8192];
 	int len;

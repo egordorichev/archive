@@ -5,3 +5,10 @@ MakeFile
 CMakeCa*
 .idea
 test
+Testing
+archive.zip
+folder
+CMakeFiles
+Makefile
+archive.cbp
+cmake_install.cmake
