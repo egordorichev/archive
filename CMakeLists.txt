@@ -5,10 +5,11 @@ set(CMAKE_C_STANDARD 99)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/")
 find_package(Lit REQUIRED)
 
-include_directories(include/ ${LIT_INCLUDE_DIRS})
+find_package(LibArchive REQUIRED)
+include_directories(include/ ${LIT_INCLUDE_DIRS} ${LibArchive_INCLUDE_DIRS})
 
-add_library(lib src/lib.c include/lib.h)
-target_link_libraries(lib ${LIT_LIBRARIES} m)
+add_library(lib src/lit_archive.c include/lit_archive.h)
+target_link_libraries(lib ${LIT_LIBRARIES} ${LibArchive_LIBRARIES} m)
 
 set_target_properties(lib PROPERTIES ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/dist")
 

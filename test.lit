@@ -1,2 +1,7 @@
-var a = test()
-print(a)
+if (!Archive.create("test.txt", "archive.zip")) {
+	print("Failed to create the archive")
+}
+
+if (!Archive.extract("archive.zip", "./folder")) {
+	print("Failed to open the archive")
+}
