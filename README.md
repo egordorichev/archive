@@ -1,6 +1,6 @@
-# tar
+# archive
 
-A simple library for `tar.gz` archives.
+A simple library for creating and extracting archives with lit.
 
 ## Building
 
